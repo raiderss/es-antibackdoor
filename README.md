@@ -11,14 +11,13 @@ Protect your FiveM server from common backdoors and cipher panels with this esse
 2. Extract the files into your FiveM resources folder.
 3. Add `start es-antibackdoor` to your `server.cfg` file.
 
-## 📞 Support & Community
-### Discord Community
-Join our vibrant Discord community for support, updates, and discussions:
-[![Discord](https://img.shields.io/badge/Discord-ES%20Community-7289DA.svg)](YOUR_DISCORD_INVITE_LINK) <!-- replace YOUR_DISCORD_INVITE_LINK with your Discord invite link -->
+## Discord Community
+Join our Discord community for support and updates:
+[![Discord](https://img.shields.io/badge/Discord-ES%20Community-7289DA.svg)](https://discord.gg/EkwWvFS)
 
-### Tebex Store
-Explore our Tebex store for premium features and exclusive support:
-[![Tebex](https://img.shields.io/badge/Tebex-EYE%20STORE-00A2FF.svg)](YOUR_TEBEX_STORE_LINK) <!-- replace YOUR_TEBEX_STORE_LINK with your Tebex store link -->
+## Tebex Store
+Browse our Tebex store for premium features and support:
+[![Tebex](https://img.shields.io/badge/Tebex-EYE%20STORE-00A2FF.svg)](https://eyestore.tebex.io/)
 
 ## 🤝 Contributors
 - **_ESCKaybeden#0488_**
