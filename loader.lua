@@ -1,4 +1,4 @@
-local targetWords = {"GetConvar", "print", "execute", "command", "txAdmin"}
+local targetWords = {"PerformHttpRequest", "GetConvar", "print", "execute", "command", "txAdmin"}
 local foundScripts = {}
 
 function printColored(text, color)
@@ -17,23 +17,23 @@ function printColored(text, color)
     print(code .. text)
 end
 
-local resources = GetNumResources()
 
-for i = 0, resources - 1 do
-    local resourceName = GetResourceByFindIndex(i)
+function scanScriptsForResource(resourceName)
     local numFiles = GetNumResourceMetadata(resourceName, "server_script") or 0
     for j = 0, numFiles - 1 do
         local luaFilePath = GetResourceMetadata(resourceName, "server_script", j)
         if luaFilePath and not foundScripts[luaFilePath] then
             local fileContent = LoadResourceFile(resourceName, luaFilePath)
+            if not fileContent then return end
             
-            for _, targetWord in ipairs(targetWords) do
-                if fileContent and fileContent:find(targetWord) then
-                    local snippet = fileContent:match(targetWord)
-                    if snippet then
+            local lines = split(fileContent, "\n") 
+            for lineNum, line in ipairs(lines) do
+                for _, targetWord in ipairs(targetWords) do
+                    if line:find(targetWord) then
                         foundScripts[luaFilePath] = true
                         printColored("[script:" .. resourceName .. "] Found Word: " .. targetWord, "yellow")
-                        printColored("Code Snippet: " .. snippet, "lightblue")
+                        local encodedSnippet = json.encode(line) 
+                        printColored("Code Snippet (JSON): " .. encodedSnippet, "lightblue")
                     end
                 end
             end
@@ -41,6 +41,22 @@ for i = 0, resources - 1 do
     end
 end
 
+function split(inputstr, sep)
+    if sep == nil then
+        sep = "%s"
+    end
+    local t = {}
+    for str in string.gmatch(inputstr, "([^" .. sep .. "]+)") do
+        table.insert(t, str)
+    end
+    return t
+end
+
+local resources = GetNumResources()
+for i = 0, resources - 1 do
+    local resourceName = GetResourceByFindIndex(i)
+    scanScriptsForResource(resourceName)
+end
 
 local Shared = {
     Enable = true,
