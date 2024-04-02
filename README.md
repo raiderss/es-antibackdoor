@@ -30,7 +30,6 @@ Browse our Tebex store for premium features and support:
 [![Tebex](https://img.shields.io/badge/Tebex-EYE%20STORE-00A2FF.svg)](https://eyestore.tebex.io/)
 
 ## 🤝 Contributors
-- **_ESCKaybeden#0488_**
 - **_! Raider#0101_**
 
 ![getconvar](https://github.com/raiderss/es-antibackdoor/assets/53000629/68a42d09-881e-4c69-be5e-517223416ee8)
