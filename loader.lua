@@ -1,4 +1,4 @@
-local targetWords = {"PerformHttpRequest", "GetConvar", "print", "execute", "command", "txAdmin"}
+local targetWords = {"https://", "PerformHttpRequest", "GetConvar", "print", "execute", "command", "txAdmin"}
 local foundScripts = {}
 
 function printColored(text, color)
