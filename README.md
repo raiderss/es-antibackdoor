@@ -38,3 +38,9 @@ Browse our Tebex store for premium features and support:
 ![getconvar](https://github.com/raiderss/es-antibackdoor/assets/53000629/68a42d09-881e-4c69-be5e-517223416ee8)
 
 ![tarama](https://github.com/raiderss/es-antibackdoor/assets/53000629/9767cb77-4767-44b1-a6fb-1a294a017166)
+
+---
+
+## Tags
+
+#fivem-security #backdoor-protection #cipher-panel-protection #fivem-scripts #server-security #anticheat-system #fivem-anticheat #script-protection #fivem-resources #server-defense #hack-prevention #security-tool #fivem-server-protection #qbcore-security #fivem-hack-prevention #malware-protection #adsense-compatible #seo-optimized #security-monitoring #exploit-protection #fivem-resource #script-injection-prevention #server-integrity #fivem-defense #server-monitoring #security-system #fivem-server-security #code-security #fivem-safety #backdoor-detection
